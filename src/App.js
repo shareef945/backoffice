@@ -1,12 +1,9 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Navigate, //replaces "Switch" used till v5
-  Route,
-  Routes,
-} from "react-router-dom";
-import LandingPage from "./components/landingPage.jsx";
-import Home from "./components/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LandingPage from "./components/pages/landingPage.jsx";
+import Home from "./components/pages/Home";
+import GraSubmission from "./components/pages/graSubmission";
+import GraBulkRequest from "./components/pages/graBulkRequest";
 
 function App() {
   return (
@@ -14,6 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/grasubmission" element={<GraSubmission />} />
+        <Route path="/grabulkrequest" element={<GraBulkRequest />} />
       </Routes>
     </Router>
   );
