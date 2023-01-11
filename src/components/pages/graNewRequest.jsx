@@ -5,10 +5,10 @@ import UploadButtons from "../utils/Upload";
 import SelectGra from "../utils/SelectGra";
 import Input from "../utils/Input";
 
-export default function GraBulkRequest() {
+export default function GraNewRequest() {
   return (
     <div>
-      <Navbar header="GRA Bulk Request Upload" />
+      <Navbar header="GRA New Request" />
       <Link to="/home">
         <img
           style={{
@@ -34,12 +34,7 @@ export default function GraBulkRequest() {
         <div style={{ margin: "5%" }}>
           <SelectGra />
         </div>
-        <div>
-          <p>
-            Format: (elevy_id, client_id, flexcube_id, account_no,
-            amount_to_reverse, reversal_reason)
-          </p>
-        </div>
+        <div></div>
         <div style={{ margin: "5%" }}>
           <Input label="Notes/Comments" />
         </div>

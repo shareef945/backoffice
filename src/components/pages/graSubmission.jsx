@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../utils/Nav";
 import { Link } from "react-router-dom";
 import UploadButtons from "../utils/Upload";
-import SelectGra from "../utils/SelectGra";
 
 export default function GraSubmission() {
   return (
@@ -29,10 +28,11 @@ export default function GraSubmission() {
           justifyItems: "center",
         }}>
         <div style={{ margin: "2%" }}>
-          <SelectGra />
+          <p>Please upload a copy of the file</p>
         </div>
         <UploadButtons />
       </div>
     </div>
   );
 }
+
