@@ -7,24 +7,25 @@ import ListItemText from "@mui/material/ListItemText";
 import { Link } from "react-router-dom";
 
 export default function BasicList({ reports }) {
-  var path = "";
+
+  const [path, setPath] = React.useState("")
+
   function handleClick(e) {
     const name = e.target.innerHTML;
     const item = reports.find((item) => item.name === name);
-    path = item.path;
+    setPath(item.path);
   }
-  console.log(path);
 
   return (
     <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
       <List>
         {reports.map((report, index) => (
           <ListItem disablePadding key={index}>
-            {/* <Link style={{textDecoration:"none"}}> */}
+            <Link to={path} style={{textDecoration:"none"}}>
             <ListItemButton>
               <ListItemText primary={report.name} onClick={handleClick} />
             </ListItemButton>
-            {/* </Link> */}
+            </Link>
           </ListItem>
         ))}
       </List>
