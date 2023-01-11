@@ -4,8 +4,11 @@ import LandingPage from "./components/pages/landingPage.jsx";
 import Home from "./components/pages/Home";
 import GraSubmission from "./components/pages/graSubmission";
 import GraBulkRequest from "./components/pages/graBulkRequest";
-import GraNewRequest from "./components/pages/graBulkRequest";
-
+import GraNewRequest from "./components/pages/graNewRequest";
+import GraSubmittedRequest from "./components/pages/graAllRequest";
+import GraAllRequest from "./components/pages/graAllRequest"
+import GraTinStatus from "./components/pages/graTinStatus"
+import GraSimulation from "./components/pages/graSimulation";
 
 function App() {
   return (
@@ -16,6 +19,10 @@ function App() {
         <Route path="/grasubmission" element={<GraSubmission />} />
         <Route path="/grabulkrequest" element={<GraBulkRequest />} />
         <Route path="/granewrequest" element={<GraNewRequest />} />
+        <Route path="/grasubmittedrequests" element={<GraSubmittedRequest />} />
+        <Route path="/graallrequests" element={<GraAllRequest />} />
+        <Route path="/gratinstatus" element={<GraTinStatus />} />
+        <Route path="/grasimulation" element={<GraSimulation />} />
       </Routes>
     </Router>
   );
