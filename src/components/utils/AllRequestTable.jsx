@@ -18,7 +18,7 @@ export default function AllRequestTable() {
   });
 
   return (
-    <div style={{ height: 300, width: '50%' }}>
+    <div style={{ height: 400, width: '80%' }}>
       <DataGrid
         {...data}
         loading={loading}

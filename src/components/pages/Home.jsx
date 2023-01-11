@@ -5,13 +5,37 @@ import BasicSelect from "../utils/Select";
 
 
 export default function Home() {
+  // function redirect() {
+  //   console.log("click");
+  // }
+
   const reports = [
-    { name: "Bulk Request Upload", category: "GRA Related" },
-    { name: "Raise New Request", category: "GRA Related" },
-    { name: "View Submitted Requests", category: "GRA Related" },
-    { name: "View All Requests", category: "GRA Related" },
-    { name: "TIN Status", category: "GRA Related" },
-    { name: "GRA Simulation", category: "GRA Related" },
+    {
+      name: "Bulk Request Upload",
+      category: "GRA Related",
+      path: "/grabulkrequest",
+    },
+    {
+      name: "Raise New Request",
+      category: "GRA Related",
+      path: "/granewrequest",
+    },
+    {
+      name: "View Submitted Requests",
+      category: "GRA Related",
+      path: "/grasubmittedrequest",
+    },
+    {
+      name: "View All Requests",
+      category: "GRA Related",
+      path: "/graallrequest",
+    },
+    { name: "TIN Status", category: "GRA Related", path: "/gratinstatus" },
+    {
+      name: "GRA Simulation",
+      category: "GRA Related",
+      path: "/grasimulation",
+    },
   ];
 
   return (
@@ -26,12 +50,13 @@ export default function Home() {
           margin: "5% 35% 0 35%",
           borderColor: "#D6DAE1",
           flexDirection: "column",
-          overflowY:"scroll",
-          height:"400px"
-        }}>
+          overflowY: "scroll",
+          height: "400px",
+        }} >
         <BasicList reports={reports} />
       </div>
-      <div style={{
+      <div
+        style={{
           display: "flex",
           margin: "2% 35% 0 35%",
           borderColor: "#D6DAE1",
