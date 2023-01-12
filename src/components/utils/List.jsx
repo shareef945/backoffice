@@ -20,9 +20,9 @@ export default function BasicList({ reports }) {
     <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
       <List>
         {reports.map((report, index) => (
-          <ListItem disablePadding key={index}>
-            <Link to={path} style={{textDecoration:"none"}}>
-            <ListItemButton>
+          <ListItem disablePadding key={index} >
+            <Link to={path} style={{textDecoration:"none", color:"#092C4C"}} >
+            <ListItemButton >
               <ListItemText primary={report.name} onClick={handleClick} />
             </ListItemButton>
             </Link>

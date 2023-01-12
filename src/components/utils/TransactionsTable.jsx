@@ -10,7 +10,7 @@ function CustomToolbar() {
   );
 }
 
-export default function AllRequestTable() {
+export default function TransactionsTable() {
   const { data, loading } = useDemoData({
     dataSet: 'Commodity',
     rowLength: 4,
@@ -18,7 +18,7 @@ export default function AllRequestTable() {
   });
 
   return (
-    <div style={{ height: 500, width: '80%' }}>
+    <div style={{ height: 300, width: '50%' }}>
       <DataGrid
         {...data}
         loading={loading}

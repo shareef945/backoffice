@@ -9,6 +9,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import TransactionsTable from "../utils/TransactionsTable";
 
 export default function GraNewRequest() {
   const today = new Date();
@@ -74,6 +75,9 @@ export default function GraNewRequest() {
             </Button>
           </ThemeProvider>
         </div>
+      </div>
+      <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+        <TransactionsTable />
       </div>
     </div>
   );

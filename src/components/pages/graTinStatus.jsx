@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../utils/Nav";
 import { Link } from "react-router-dom";
-import AllRequestTable from "../utils/AllRequestTable";
+import TinTable from "../utils/TinTable";
 import Textarea from "@mui/joy/Textarea";
 
 export default function GraTinStatus() {
@@ -40,7 +40,7 @@ export default function GraTinStatus() {
             height: "100px",
           }}
         />
-        <AllRequestTable />
+        <TinTable />
       </div>
     </div>
   );

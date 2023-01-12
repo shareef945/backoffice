@@ -30,7 +30,7 @@ export default function GraSimulation() {
       </Link>
 
       <div>
-        <div style={{ display: "flex", justifyContent: "center", marginTop:"3%" }}>
+        <div style={{ display: "flex", flexDirection:"column" , justifyContent: "center", marginTop:"3%" , alignItems:"center"}}>
           <div>
             <BasicTextFields label="Sender's Account Number" />
           </div>

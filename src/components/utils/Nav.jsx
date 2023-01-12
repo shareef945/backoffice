@@ -12,7 +12,13 @@ export default function Navbar(props) {
         justifyItems: "center",
       }}>
       <div>
-        <img src="/eco_logo_blue.jpg" alt="logo" style={{ height: "106px" }} />
+        <Link to="/home">
+          <img
+            src="/eco_logo_blue.jpg"
+            alt="logo"
+            style={{ height: "106px" }}
+          />
+        </Link>
       </div>
       <div>
         <p

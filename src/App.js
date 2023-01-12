@@ -5,7 +5,7 @@ import Home from "./components/pages/Home";
 import GraSubmission from "./components/pages/graSubmission";
 import GraBulkRequest from "./components/pages/graBulkRequest";
 import GraNewRequest from "./components/pages/graNewRequest";
-import GraSubmittedRequest from "./components/pages/graAllRequest";
+import GraSubmittedRequest from "./components/pages/graSubmittedRequest";
 import GraAllRequest from "./components/pages/graAllRequest"
 import GraTinStatus from "./components/pages/graTinStatus"
 import GraSimulation from "./components/pages/graSimulation";

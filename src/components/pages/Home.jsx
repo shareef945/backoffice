@@ -23,12 +23,12 @@ export default function Home() {
     {
       name: "View Submitted Requests",
       category: "GRA Related",
-      path: "/grasubmittedrequest",
+      path: "/grasubmittedrequests",
     },
     {
       name: "View All Requests",
       category: "GRA Related",
-      path: "/graallrequest",
+      path: "/graallrequests",
     },
     { name: "TIN Status", category: "GRA Related", path: "/gratinstatus" },
     {
@@ -51,7 +51,7 @@ export default function Home() {
           borderColor: "#D6DAE1",
           flexDirection: "column",
           overflowY: "scroll",
-          height: "400px",
+          height: "400px",          
         }} >
         <BasicList reports={reports} />
       </div>
@@ -61,7 +61,7 @@ export default function Home() {
           margin: "2% 35% 0 35%",
           borderColor: "#D6DAE1",
           flexDirection: "column",
-        }}>
+        }} >
         <BasicSelect />
       </div>
     </div>
