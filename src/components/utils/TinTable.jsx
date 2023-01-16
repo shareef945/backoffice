@@ -18,7 +18,7 @@ export default function TinTable() {
   });
 
   return (
-    <div style={{ height: 300, width: '50%' }}>
+    <div style={{ height: 300, width: '80%' }}>
       <DataGrid
         {...data}
         loading={loading}

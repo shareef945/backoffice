@@ -3,12 +3,7 @@ import Navbar from "../utils/Nav";
 import BasicList from "../utils/List";
 import BasicSelect from "../utils/Select";
 
-
 export default function Home() {
-  // function redirect() {
-  //   console.log("click");
-  // }
-
   const reports = [
     {
       name: "Bulk Request Upload",
@@ -41,7 +36,8 @@ export default function Home() {
   return (
     <div>
       <Navbar header="Available Reports" />
-      <div
+
+      {/* <div
         style={{
           display: "flex",
           borderStyle: "solid",
@@ -54,8 +50,8 @@ export default function Home() {
           height: "400px",          
         }} >
         <BasicList reports={reports} />
-      </div>
-      <div
+      </div> */}
+      {/* <div
         style={{
           display: "flex",
           margin: "2% 35% 0 35%",
@@ -63,7 +59,7 @@ export default function Home() {
           flexDirection: "column",
         }} >
         <BasicSelect />
-      </div>
+      </div> */}
     </div>
   );
 }

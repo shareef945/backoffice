@@ -16,21 +16,15 @@ export default function GraSimulation() {
   });
   return (
     <div>
-      <Navbar header="GRA Simulation" />
-      <Link to="/home">
-        <img
-          style={{
-            height: "30px",
-            margin: "2% 0 0 3%",
-            transform: "rotate(180deg)",
-          }}
-          src="/right-arrow.svg"
-          alt="back arrow"
-        />
-      </Link>
-
       <div>
-        <div style={{ display: "flex", flexDirection:"column" , justifyContent: "center", marginTop:"3%" , alignItems:"center"}}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            marginTop: "8%",
+            alignItems: "center",
+          }}>
           <div>
             <BasicTextFields label="Sender's Account Number" />
           </div>
@@ -47,7 +41,12 @@ export default function GraSimulation() {
             <BasicTextFields label="E-Levy" />
           </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "center" , marginTop:"3%"}}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "3%",
+          }}>
           <ThemeProvider theme={theme}>
             <Button color="neutral" variant="contained">
               Submit

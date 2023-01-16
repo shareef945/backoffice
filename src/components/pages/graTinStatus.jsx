@@ -3,23 +3,11 @@ import Navbar from "../utils/Nav";
 import { Link } from "react-router-dom";
 import TinTable from "../utils/TinTable";
 import Textarea from "@mui/joy/Textarea";
+import UploadButtons from "../utils/Upload";
 
 export default function GraTinStatus() {
   return (
     <div>
-      <Navbar header="GRA Tin Status" />
-      <Link to="/home">
-        <img
-          style={{
-            height: "30px",
-            margin: "2% 0 0 3%",
-            transform: "rotate(180deg)",
-          }}
-          src="/right-arrow.svg"
-          alt="back arrow"
-        />
-      </Link>
-
       <div
         style={{
           display: "flex",
@@ -40,6 +28,9 @@ export default function GraTinStatus() {
             height: "100px",
           }}
         />
+        <div style={{marginBottom:"60px"}}>
+          <UploadButtons />
+        </div>
         <TinTable />
       </div>
     </div>

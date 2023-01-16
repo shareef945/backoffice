@@ -8,18 +8,7 @@ import Input from "../utils/Input";
 export default function GraBulkRequest() {
   return (
     <div>
-      <Navbar header="GRA Bulk Request Upload" />
-      <Link to="/home">
-        <img
-          style={{
-            height: "30px",
-            margin: "2% 0 0 3%",
-            transform: "rotate(180deg)",
-          }}
-          src="/right-arrow.svg"
-          alt="back arrow"
-        />
-      </Link>
+      
 
       <div
         style={{
@@ -31,7 +20,7 @@ export default function GraBulkRequest() {
           justifyContent: "center",
           justifyItems: "center",
         }}>
-        <div style={{ margin: "5%" }}>
+        <div style={{ margin: "10%" }}>
           <SelectGra />
         </div>
         <div>

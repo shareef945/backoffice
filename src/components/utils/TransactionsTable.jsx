@@ -18,7 +18,7 @@ export default function TransactionsTable() {
   });
 
   return (
-    <div style={{ height: 300, width: '50%' }}>
+    <div style={{ height: 300, width: '90%' }}>
       <DataGrid
         {...data}
         loading={loading}

@@ -2,22 +2,12 @@ import React from "react";
 import Navbar from "../utils/Nav";
 import { Link } from "react-router-dom";
 import UploadButtons from "../utils/Upload";
+import GraAllRequest from "./graAllRequest";
 
 export default function GraSubmission() {
   return (
     <div>
-      <Navbar header="GRA Submission" />
-      <Link to="/home">
-        <img
-          style={{
-            height: "30px",
-            margin: "2% 0 0 3%",
-            transform: "rotate(180deg)",
-          }}
-          src="/right-arrow.svg"
-          alt="back arrow"
-        />
-      </Link>
+      {/* <Navbar header="GRA Submission"/> */}
 
       <div
         style={{
@@ -27,7 +17,7 @@ export default function GraSubmission() {
           justifyContent: "center",
           justifyItems: "center",
         }}>
-        <div style={{ margin: "2%" }}>
+        <div style={{ marginTop: "10%" }}>
           <p>Please upload a copy of the file</p>
         </div>
         <UploadButtons />
@@ -35,4 +25,3 @@ export default function GraSubmission() {
     </div>
   );
 }
-
