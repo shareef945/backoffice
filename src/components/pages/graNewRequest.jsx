@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../utils/Nav";
-import { Link } from "react-router-dom";
 import Input from "../utils/Input";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 import dayjs from "dayjs";
@@ -30,7 +28,6 @@ export default function GraNewRequest() {
 
   return (
     <div>
-
       <div
         style={{
           display: "flex",
@@ -64,7 +61,12 @@ export default function GraNewRequest() {
           </ThemeProvider>
         </div>
       </div>
-      <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
         <TransactionsTable />
       </div>
     </div>

@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../utils/Nav";
-import { Link } from "react-router-dom";
 import BasicTextFields from "../utils/Input";
 import { Button } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";

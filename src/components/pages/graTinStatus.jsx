@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../utils/Nav";
-import { Link } from "react-router-dom";
 import TinTable from "../utils/TinTable";
 import Textarea from "@mui/joy/Textarea";
 import UploadButtons from "../utils/Upload";

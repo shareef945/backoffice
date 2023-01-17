@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../utils/Nav";
-import { Link } from "react-router-dom";
 import UploadButtons from "../utils/Upload";
 import SelectGra from "../utils/SelectGra";
 import Input from "../utils/Input";
@@ -8,8 +6,6 @@ import Input from "../utils/Input";
 export default function GraBulkRequest() {
   return (
     <div>
-      
-
       <div
         style={{
           display: "flex",

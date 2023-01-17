@@ -1,13 +1,9 @@
 import React from "react";
-import Navbar from "../utils/Nav";
-import { Link } from "react-router-dom";
 import AllRequestTable from "../utils/AllRequestTable";
 
 export default function GraAllRequest() {
   return (
     <div>
-      
-
       <div
         style={{
           display: "flex",

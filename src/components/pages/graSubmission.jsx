@@ -1,14 +1,9 @@
 import React from "react";
-import Navbar from "../utils/Nav";
-import { Link } from "react-router-dom";
 import UploadButtons from "../utils/Upload";
-import GraAllRequest from "./graAllRequest";
 
 export default function GraSubmission() {
   return (
     <div>
-      {/* <Navbar header="GRA Submission"/> */}
-
       <div
         style={{
           display: "flex",

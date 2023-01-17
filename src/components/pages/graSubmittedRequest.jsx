@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../utils/Nav";
-import { Link } from "react-router-dom";
 import SubmittedTable from "../utils/SubmittedTable";
 
 export default function GraSubmittedRequest() {
