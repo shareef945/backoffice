@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
 import LandingPage from "./components/pages/landingPage.jsx";
 import Home from "./components/pages/Home";
 import GraSubmission from "./components/pages/graSubmission";
@@ -12,12 +17,15 @@ import GraSimulation from "./components/pages/graSimulation";
 import Navbar from "./components/utils/Nav";
 
 function App() {
+  function Private({ children }) {
+    return sessionStorage.getItem("token") ? children : <Navigate to="url" />;
+  }
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
-        {/* <Route path="/gra/submission" element={<GraSubmission />} /> */}
         <Route
           path="/gra/submission"
           element={

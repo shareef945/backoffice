@@ -1,72 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import env from "react-dotenv";
+
 
 export default function LandingPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+ 
+  const [data, setData] = useState(null);
 
-  return (
-    <div
-      style={{
-        margin: "20% 10% 10% 10%",
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-      }}>
-      <div className="center-div">
-        <div
-          style={{ display: "flex", justifyContent: "center", width: "400px" }}>
-          <img
-            style={{ width: "180px", height: "120px", marginBottom: "15px" }}
-            src="/eco_logo_blue.jpg"
-            alt="logo"
-          />
-        </div>
-        <div
-          style={{
-            alignItems: "center",
-            display: "flex",
-            flexDirection: "column",
-            gap: "20px",
-            width: "400px",
-          }}>
-          <div style={{ width: "400px" }}>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="email"
-            />
-          </div>
-          <div style={{ width: "400px" }}>
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              placeholder="password"
-            />
-          </div>
-          <div style={{ width: "100%" }}>
-            <Link to="/home">
-              <button
-                style={{ width: "100%", fontSize: "15px" }}
-                className="btn btn-outline-dark ">
-                Log In
-              </button>
-            </Link>
-          </div>
-          <div style={{ width: "100%" }}>
-            <Link to="/home">
-              <button
-                style={{ width: "100%", fontSize: "15px" }}
-                className="btn btn-outline-secondary ">
-                Set-Up 2FA
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  const callApi = async () => {
+    try {
+      const response = await fetch(env.LOGIN_ROOT);
+      if (response.status === 200) {
+        setData(await response.json())
+      } else if (response.status === 401) {
+        const {
+          error,
+          data: { URL },
+        } = await response.json();
+        if (!error && URL) window.location.href = URL;
+        else console.log("Invalid redirect URL");
+      } else {
+        console.log("handle other response status codes");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  callApi()
+  console.log(data)
 }
+
+
