@@ -10,6 +10,7 @@ export default function Navbar(props) {
   function hasDoubleSlashes(url) {
     return url.split("/").length - 1 >= 2;
   }
+
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div //header
@@ -49,20 +50,6 @@ export default function Navbar(props) {
             display: "flex",
             fontSize: "20px",
           }}>
-          <div>
-            <Link
-              style={{ textDecoration: "none", color: "#092C4C" }}
-              to="/home">
-              Home
-            </Link>
-          </div>
-          <div>
-            <Link
-              style={{ textDecoration: "none", color: "#092C4C" }}
-              to="/login">
-              Logout
-            </Link>
-          </div>
         </div>
       </div>
       <hr style={{ margin: 0 }} />
