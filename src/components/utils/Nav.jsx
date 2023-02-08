@@ -20,12 +20,12 @@ export default function Navbar(props) {
           alignItems: "center",
           justifyContent: "space-between",
           justifyItems: "center",
-          height: "80px",
+          height: "10vh",
         }}>
         <div>
           <Link to="/home">
             <img
-              src="/eco_logo_blue.jpg"
+              src="/portal/eco_logo_blue.jpg"
               alt="logo"
               style={{ height: "80px" }}
             />
@@ -58,7 +58,7 @@ export default function Navbar(props) {
         <div
           style={{
             width: "300px",
-            height: "91vh",
+            height: "90vh",
             border: "solid",
             borderWidth: "1px",
             borderColor: "#BCBCBC",

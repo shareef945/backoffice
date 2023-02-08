@@ -55,8 +55,6 @@ function App() {
 
 
   return (
-    <>
-      {data ? (
         <Router>
           <Routes>
             <Route path="/" element={<LandingPage />} />
@@ -117,11 +115,7 @@ function App() {
             />
           </Routes>
         </Router>
-      ) : (
-        <div>You are not logged in</div>
       )}
-    </>
-  );
-}
+
 
 export default App;
